@@ -1,5 +1,19 @@
 from tkinter import *
 from turtle import back
+import os
+
+c = os.path.dirname(__file__)
+nomeArquivo = c+"\\dadosIMC.txt"
+
+def gravarDados():
+    arquivo = open(nomeArquivo, "a")
+    arquivo.write("Nome......:%s" % vnome.get())
+    arquivo.write("\nPeso....:%s" % vpeso.get())
+    arquivo.write("\nAltura..:%s" % valtura.get())
+    arquivo.write("\nIMC.....:%s" % IMC)
+    arquivo.write("\n\n")
+    arquivo.close()
+
 
 app = Tk()
 app.title("Calculadora IMC")
@@ -21,5 +35,7 @@ Label(app, text="Altura", background="#dda", foreground="#031",
 valtura = Entry(app)
 valtura.place(x=270, y=130, width=100, height=20)
 
+Button(app, text="Gravar", foreground="#031", command=gravarDados).place(
+    x=270, y=170, width=100, height=20)
 
 app.mainloop()
