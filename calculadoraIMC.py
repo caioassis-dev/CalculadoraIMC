@@ -1,5 +1,5 @@
 from tkinter import *
-from turtle import back
+
 import os
 
 c = os.path.dirname(__file__)
@@ -41,5 +41,6 @@ valtura.place(x=270, y=130, width=100, height=20)
 
 Button(app, text="Gravar", foreground="#031", command=gravarDados).place(
     x=270, y=170, width=100, height=20)
+
 
 app.mainloop()
