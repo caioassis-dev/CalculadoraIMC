@@ -1,3 +1,4 @@
+
 from tkinter import *
 
 import os
@@ -23,6 +24,11 @@ app = Tk()
 app.title("Calculadora IMC")
 app.geometry("700x500")
 app.configure(background="#dda")
+
+
+img = PhotoImage(file="/Users/caio/projetos/CalculadoraIMC/IMC.png")
+label_imagem = Label(app, image=img, background="#dda").place(
+    x=260, y=220, width=130, height=130)
 
 Label(app, text="Nome", background="#dda", foreground="#031",
       anchor=W).place(x=295, y=10, width=100, height=20)
