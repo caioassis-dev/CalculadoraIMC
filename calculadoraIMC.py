@@ -5,7 +5,11 @@ import os
 c = os.path.dirname(__file__)
 nomeArquivo = c+"\\dadosIMC.txt"
 
+
 def gravarDados():
+    P = float(vpeso.get())
+    A = float(valtura.get())
+    IMC = P / A**2
     arquivo = open(nomeArquivo, "a")
     arquivo.write("Nome......:%s" % vnome.get())
     arquivo.write("\nPeso....:%s" % vpeso.get())
