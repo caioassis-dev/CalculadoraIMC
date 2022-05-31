@@ -6,7 +6,5 @@
 
 ### Preview da aplicação:
   
-https://caioassis-dev.github.io/CalculadoraIMC/
-
 ![Captura de Tela 2022-05-14 às 18 31 20](https://user-images.githubusercontent.com/61170444/168448849-775f664b-792c-4697-8d8a-309d2697892e.png)  
   
